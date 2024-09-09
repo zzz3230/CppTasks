@@ -84,6 +84,7 @@ int main(int argc, char** argv){
         
         count_words_rate(std::string(argv[1]), words_rate, total_words_count);
         save_words_rate(std::string(argv[2]), words_rate, total_words_count);
+        
     }
     catch (std::exception& ex)
     {
