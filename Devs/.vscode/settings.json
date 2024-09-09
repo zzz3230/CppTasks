@@ -1,0 +1,11 @@
+{
+    "files.associations": {
+        "iostream": "cpp",
+        "iosfwd": "cpp",
+        "random": "cpp",
+        "initializer_list": "cpp",
+        "cstddef": "cpp",
+        "ostream": "cpp",
+        "new": "cpp"
+    }
+}
