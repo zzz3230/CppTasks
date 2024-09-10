@@ -7,7 +7,7 @@
 #include <algorithm>
 #include <stdexcept>
 
-bool is_word(char c){
+bool is_letter(char c){
     return ('a' <= c && c <= 'z') || ('A' <= c && c <= 'Z');
 }
 
@@ -48,7 +48,7 @@ void count_words_rate(const std::string& file_name, std::map<std::string, int>& 
         std::stringstream word_builder;
         for (size_t i = 0; i < line.length(); i++)
         {
-            if((std::isdigit(line[i]) || is_word(line[i]))){
+            if((std::isdigit(line[i]) || is_letter(line[i]))){
                 word_builder << line[i];
             }
             else{
