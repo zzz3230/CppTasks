@@ -28,7 +28,7 @@ void save_words_rate(const std::string& output_file_name, const std::map<std::st
 
     for (auto &kw : rate_list)
     {
-        output_file << kw.first << "," << kw.second << "," << (double)kw.second / total_words_count * 100 << "%\n";
+        output_file << kw.first << "," << kw.second << "," << static_cast<double>(kw.second) / total_words_count * 100 << "%\n";
     }
     
     output_file.close();
@@ -41,6 +41,8 @@ void count_words_rate(const std::string& file_name, std::map<std::string, int>& 
     if(!file.good()){
         throw std::exception("input file not available");
     }
+
+    total_words_count = 0;
 
     std::string line;
     while (std::getline(file, line))

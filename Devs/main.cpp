@@ -1,5 +1,4 @@
 #include <iostream>
-#include <gmp.h>
 #include <any>
 
 namespace global_a{
@@ -22,6 +21,25 @@ namespace global_b{
 
 
 using namespace std;
+
+
+class Extra
+{
+public:
+    Extra(int a, int b) {
+        val0 = a;
+        val1 = b;
+        arr = new int[a];
+    }
+    void Log() const
+    {
+        cout << "[" << this << "] " << val0 << " " << val1 << endl;
+    }
+private:
+    int val0;
+    int val1;
+    int* arr;
+};
 
 class Foo {
 public:
@@ -120,6 +138,17 @@ private:
 
 int main(){
 
+    Extra extra1(10, 20);
+
+    Extra extra2(30, 40);
+
+    Extra extra3(extra1);
+    
+    extra1.Log();
+    extra1 = extra2;
+    extra1.Log();
+    
+    return 0;
     Wallet* wal_ptr;
     {
         Wallet mywallet{};
@@ -136,7 +165,7 @@ int main(){
 
     Foo(123);
     
-    qsort(0, 0, 0, [](auto a, auto b) -> int {return a > b});
+    qsort(0, 0, 0, [](auto a, auto b) -> int {return a > b;});
 
     delete new Foo(123);
     
