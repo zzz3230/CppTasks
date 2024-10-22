@@ -1,0 +1,14 @@
+BitArrayTests (12 tests) Success
+  bit_array_test (12 tests) Success
+    any_none Success
+    bitwise_and_or_xor Success
+    bitwise_left_right Success
+    count_clear Success
+    equals Success
+    get_set Success
+    init Success
+    inverse Success
+    pushback Success
+    resize Success
+    size Success
+    tostring_resize_set_reset Success

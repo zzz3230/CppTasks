@@ -8,6 +8,13 @@ using namespace bits;
 TEST(bit_array_test, init)
 {
     BitArray array(100, 0);
+    BitArray array2{};
+    ASSERT_EQ(array2.size(), 0);
+    ASSERT_TRUE(array2.empty());
+    ASSERT_EQ(array2.any(), false);
+    ASSERT_EQ(array2.none(), true);
+
+    array = array;
 }
 
 TEST(bit_array_test, size)
@@ -95,6 +102,25 @@ TEST(bit_array_test, tostring_resize_set_reset)
     ASSERT_EQ(array.to_string(), "111111111111111111111111111111111111111111111");
     array.reset();
     ASSERT_EQ(array.to_string(), "000000000000000000000000000000000000000000000");
+
+    const BitArray array1 = array;
+    
+    try {array1[-1]; FAIL(); } catch (...) {}
+    try {array1[45]; FAIL(); } catch (...) {}
+    try {array1[123]; FAIL(); } catch (...) {}
+    
+    try {array.set(-1, true); FAIL(); } catch (...) {}
+    try {array.set(45, true); FAIL(); } catch (...) {}
+    try {array.set(123, true); FAIL(); } catch (...) {}
+
+
+    BitArray array2{};
+    array2.resize(200, true);
+    ASSERT_TRUE(array2.any() && array2.count() == 200);
+
+    BitArray array3{};
+    array3.resize(200, false);
+    ASSERT_TRUE(array3.none());
 }
 
 TEST(bit_array_test, resize)
@@ -120,6 +146,18 @@ TEST(bit_array_test, resize)
     array.resize(50, true);
     ASSERT_EQ(array.to_string(), "11111111110000000000000000000000000000000000000000");
     ASSERT_EQ(array.count(), 10);
+
+
+    BitArray array2 = BitArray(1000);
+    array2.resize(10);
+    array2.resize(900, true);
+    ASSERT_EQ(array2.count(), 900-10);
+
+    array2 = BitArray(0);
+    array2.resize(1000, true);
+    array2.resize(10);
+    array2.resize(900, false);
+    ASSERT_EQ(array2.count(), 10);
 }
 
 TEST(bit_array_test, inverse)
@@ -236,7 +274,6 @@ TEST(bit_array_test, bitwise_left_right)
     ASSERT_TRUE(is_correct_22);
 }
 
-
 TEST(bit_array_test, pushback)
 {
     BitArray array{10};
@@ -264,6 +301,53 @@ TEST(bit_array_test, equals)
     }
 
     auto array1 = array0;
+    BitArray array2{10, 0};
 
     ASSERT_TRUE(array0 == array1);
+    ASSERT_FALSE(array0 != array1);
+    ASSERT_FALSE(array1 == array2);
+    ASSERT_TRUE(array1 != array2);
+
+
+    array1.set(43, !array1[43]);
+
+    ASSERT_TRUE(array0 != array1);
+    ASSERT_FALSE(array0 == array1);
+}
+
+TEST(bit_array_test, get_set)
+{
+    BitArray array{10};
+    try
+    {
+        array.set(-1);
+        array.set(10);
+        array.set(100);
+
+        FAIL();
+    }
+    catch (...)
+    {
+    }
+
+    try
+    {
+        array[-1];
+        array[10];
+        array[100];
+
+        FAIL();
+    }
+    catch (...)
+    {
+    }
+}
+
+TEST(bit_array_test, rvalue)
+{
+    BitArray array6 =
+        BitArray(4, 0b01010000000000000000000000000000) |
+            BitArray(4, 0b10101000000000000000000000000000);
+    
+    ASSERT_EQ(array6.to_string(), "1111");
 }

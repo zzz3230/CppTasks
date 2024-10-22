@@ -2,6 +2,9 @@
 #include <string>
 #include <sstream>
 #include <format>
+#include <algorithm>
+#include <stdexcept>
+#include <iostream>
 
 namespace bits
 {
@@ -49,6 +52,7 @@ namespace bits
         //Первые sizeof(int) бит можно инициализровать с помощью параметра value.
         explicit BitArray(int num_bits, unsigned int value = 0);
         BitArray(const BitArray& b);
+        BitArray(BitArray&& b);
 
 
         //Обменивает значения двух битовых массивов.
@@ -117,7 +121,10 @@ namespace bits
     bool operator!=(const BitArray & a, const BitArray & b);
     
     BitArray operator&(const BitArray& b1, const BitArray& b2);
+    
     BitArray operator|(const BitArray& b1, const BitArray& b2);
+    BitArray operator|(BitArray&& b1, BitArray&& b2);
+    
     BitArray operator^(const BitArray& b1, const BitArray& b2);
 }
 

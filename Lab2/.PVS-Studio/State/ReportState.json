@@ -1,0 +1,116 @@
+{
+  "json": [
+    {
+      "code": "",
+      "falseAlarm": false,
+      "level": 0,
+      "message": "Unable to read file: CMakeFiles/PrisonGame.dir/includes_CXX.rsp.",
+      "positions": [],
+      "favorite": false,
+      "projects": [],
+      "id": 0
+    },
+    {
+      "code": "V009",
+      "falseAlarm": false,
+      "level": 0,
+      "message": "To use free version of PVS-Studio, source code files are required to start with a special comment.",
+      "positions": [
+        {
+          "column": 1,
+          "endColumn": 1,
+          "line": 1,
+          "endLine": 1,
+          "file": "C:\\Users\\zzz32\\cppTasks\\Lab2\\src\\StLogger\\StLogger.cpp",
+          "navigation": {
+            "currentLine": 0,
+            "previousLine": 0,
+            "nextLine": 0,
+            "columns": 0
+          }
+        }
+      ],
+      "favorite": false,
+      "projects": [],
+      "id": 1
+    },
+    {
+      "code": "",
+      "falseAlarm": false,
+      "level": 0,
+      "message": "Command \"C:\\Program Files (x86)\\PVS-Studio\\x64\\PVS-Studio.exe --cfg C:\\Users\\zzz32\\cppTasks\\Lab2\\src\\StLogger\\StLogger.PVS-Studio.cfg\" returned code 1.\r\nPVS-Studio analyzer had encountered fatal error. Check your output file for details.",
+      "positions": [],
+      "favorite": false,
+      "projects": [],
+      "id": 2
+    },
+    {
+      "code": "V009",
+      "falseAlarm": false,
+      "level": 0,
+      "message": "To use free version of PVS-Studio, source code files are required to start with a special comment.",
+      "positions": [
+        {
+          "column": 1,
+          "endColumn": 1,
+          "line": 1,
+          "endLine": 1,
+          "file": "C:\\Users\\zzz32\\cppTasks\\Lab2\\src\\PrisonGame\\Game.cpp",
+          "navigation": {
+            "currentLine": 0,
+            "previousLine": 0,
+            "nextLine": 0,
+            "columns": 0
+          }
+        }
+      ],
+      "favorite": false,
+      "projects": [],
+      "id": 3
+    },
+    {
+      "code": "",
+      "falseAlarm": false,
+      "level": 0,
+      "message": "Command \"C:\\Program Files (x86)\\PVS-Studio\\x64\\PVS-Studio.exe --cfg C:\\Users\\zzz32\\cppTasks\\Lab2\\src\\PrisonGame\\Game.PVS-Studio.cfg\" returned code 1.\r\nPVS-Studio analyzer had encountered fatal error. Check your output file for details.",
+      "positions": [],
+      "favorite": false,
+      "projects": [],
+      "id": 4
+    },
+    {
+      "code": "V009",
+      "falseAlarm": false,
+      "level": 0,
+      "message": "To use free version of PVS-Studio, source code files are required to start with a special comment.",
+      "positions": [
+        {
+          "column": 1,
+          "endColumn": 1,
+          "line": 1,
+          "endLine": 1,
+          "file": "C:\\Users\\zzz32\\cppTasks\\Lab2\\src\\main.cpp",
+          "navigation": {
+            "currentLine": 0,
+            "previousLine": 0,
+            "nextLine": 0,
+            "columns": 0
+          }
+        }
+      ],
+      "favorite": false,
+      "projects": [],
+      "id": 5
+    },
+    {
+      "code": "",
+      "falseAlarm": false,
+      "level": 0,
+      "message": "Command \"C:\\Program Files (x86)\\PVS-Studio\\x64\\PVS-Studio.exe --cfg C:\\Users\\zzz32\\cppTasks\\Lab2\\src\\main.PVS-Studio.cfg\" returned code 1.\r\nPVS-Studio analyzer had encountered fatal error. Check your output file for details.",
+      "positions": [],
+      "favorite": false,
+      "projects": [],
+      "id": 6
+    }
+  ]
+}

@@ -20,3 +20,5 @@ Debug/
 CMakeFiles/
 .idea/
 .vs/
+build_cov/
+/Lab1/build_cov

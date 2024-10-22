@@ -19,11 +19,20 @@ BitArray::BitArray(int num_bits, unsigned int value)
     _buffer = new unsigned int[_real_buffer_length];
     std::fill_n(_buffer, _real_buffer_length, 0);
     _buffer[0] = value;
+
+    std::cout << this  << " raw created " << to_string() << std::endl;
 }
 
 BitArray::BitArray(const BitArray& b) : BitArray(b._num_bits)
 {
     *this = b;
+    std::cout << this  << " lvalue created " << b.to_string() << std::endl;
+}
+
+BitArray::BitArray(BitArray&& b) : BitArray()
+{
+    std::cout << this  << " rvalue created" << std::endl;
+    swap(b);
 }
 
 void BitArray::swap(BitArray& b) noexcept
@@ -36,6 +45,9 @@ void BitArray::swap(BitArray& b) noexcept
 
 BitArray& BitArray::set(int n, bool val)
 {
+    if(n >= _num_bits || n < 0)
+        throw std::out_of_range(std::format("Index {} out of range (count={})", n, _num_bits));
+    
     if(val)
         _buffer[n / _element_size] |= 1 << (_element_size - (n % _element_size) - 1);
     else
@@ -75,6 +87,8 @@ void BitArray::push_back(bool bit)
 
 BitArray& BitArray::operator=(const BitArray& b)
 {
+    std::cout << this << " operator= " << b.to_string() << std::endl;
+    
     if(this == &b)
     {
         return *this;
@@ -136,13 +150,14 @@ void BitArray::resize(int num_bits, bool value)
 
 BitArray::~BitArray()
 {
+    std::cout << this << " destroyed " << to_string() << std::endl;
     delete[] _buffer;
 }
 
 BitArray& BitArray::operator&=(const BitArray& b)
 {
     if(size() != b.size())
-        throw std::exception("BitArrays lengths not match");
+        throw std::runtime_error("BitArrays lengths not match");
     
     for (int i = 0; i < _using_buffer_length; ++i)
     {
@@ -154,7 +169,7 @@ BitArray& BitArray::operator&=(const BitArray& b)
 BitArray& BitArray::operator|=(const BitArray& b)
 {
     if(size() != b.size())
-        throw std::exception("BitArrays lengths not match");
+        throw std::runtime_error("BitArrays lengths not match");
     
     for (int i = 0; i < _using_buffer_length; ++i)
     {
@@ -166,7 +181,7 @@ BitArray& BitArray::operator|=(const BitArray& b)
 BitArray& BitArray::operator^=(const BitArray& b)
 {
     if(size() != b.size())
-        throw std::exception("BitArrays lengths not match");
+        throw std::runtime_error("BitArrays lengths not match");
     
     for (int i = 0; i < _using_buffer_length; ++i)
     {
@@ -250,7 +265,7 @@ BitArray& BitArray::operator<<=(int shift)
 
 bool BitArray::operator[](int i) const
 {
-    if(i >= _num_bits)
+    if(i >= _num_bits || i < 0)
         throw std::out_of_range(std::format("Index {} out of range (count={})", i, _num_bits));
     
     return _buffer[i / _element_size] & (1 << (_element_size - (i % _element_size) - 1));
@@ -258,7 +273,7 @@ bool BitArray::operator[](int i) const
 
 Bit BitArray::operator[](int i)
 {
-    if(i >= _num_bits)
+    if(i >= _num_bits || i < 0)
         throw std::out_of_range(std::format("Index {} out of range (count={})", i, _num_bits));
     
     return Bit{_buffer[i / _element_size], (_element_size - (i % _element_size) - 1)};
@@ -298,10 +313,12 @@ bool BitArray::none() const
 
 BitArray BitArray::operator~() const
 {
-    BitArray new_array(*this);
-    for (int i = 0; i < new_array._using_buffer_length; ++i)
+    BitArray new_array(_num_bits);
+    new_array._using_buffer_length = _using_buffer_length;
+    
+    for (int i = 0; i < _using_buffer_length; ++i)
     {
-        new_array._buffer[i] = ~new_array._buffer[i];
+        new_array._buffer[i] = ~_buffer[i];
     }
     return new_array;
 }
@@ -346,10 +363,17 @@ namespace bits
     }
     BitArray operator|(const BitArray& b1, const BitArray& b2)
     {
-        BitArray res = b1;
+        BitArray res{b1};
         res |= b2;
         return res;
     }
+    BitArray operator|(BitArray&& b1, BitArray&& b2)
+    {
+        BitArray res{std::move(b1)};
+        res |= b2;
+        return res;
+    }
+    
     BitArray operator^(const BitArray& b1, const BitArray& b2)
     {
         BitArray res = b1;
