@@ -11,7 +11,7 @@ namespace PrisonGame
         _printOutput = val;
     }
 
-    void Game::SetStrategies(std::vector<std::unique_ptr<StrategyCreator>>& creators){
+    void Game::SetStrategies(const std::vector<std::unique_ptr<StrategyCreator>>& creators){
     
         if(_strategies.size() > 0){
             ERROR("Game strategies already set");

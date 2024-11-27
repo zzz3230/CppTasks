@@ -36,7 +36,7 @@ namespace PrisonGame
         void SetIterationsCount(int count);
         void PrintFinalScore();
 
-        void SetStrategies(std::vector<std::unique_ptr<StrategyCreator>>& creators);
+        void SetStrategies(const std::vector<std::unique_ptr<StrategyCreator>>& creators);
         // OR BETTER
         //void SetStrategies(std::vector<std::unique_ptr<IStrategy>>& strategies);
 

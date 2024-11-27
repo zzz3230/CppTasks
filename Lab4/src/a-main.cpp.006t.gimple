@@ -1,0 +1,1878 @@
+voidt float &_element_t & &t_t &v)
+{
+  struct tuple D.58743;
+  int D.58707;
+  int D.58706;
+  struct tuple D.54912;
+  int D.54885;
+  struct string D.52134;
+  struct allocator D.52133;
+  int D.58705;
+  int D.63812;
+
+  {
+    try
+      {
+        try
+          {
+            D.58707 = 3;
+            try
+              {
+                D.58706 = 2;
+                try
+                  {
+                    try
+                      {
+                        D.54885 = 123;
+                        std::tuple<int, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >::tuple<int, const char (&)[6]> (&D.54912, &D.54885, "World");
+                        try
+                          {
+                            try
+                              {
+                                try
+                                  {
+                                    std::allocator<char>::allocator (&D.52133);
+                                    try
+                                      {
+                                        std::__cxx11::basic_string<char>::basic_string<> (&D.52134, "Hello", &D.52133);
+                                        try
+                                          {
+                                            try
+                                              {
+                                                D.58705 = 123;
+                                                std::tuple<int, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::tuple<int, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, int, float>::tuple<int, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::tuple<int, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, int, int> (&D.58743, &D.58705, &D.52134, &D.54912, &D.58706, &D.58707);
+                                                try
+                                                  {
+                                                    _1 = operator<< <char, std::char_traits<char>, int, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::tuple<int, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, int, float> (&cout, &D.58743);
+                                                    std::basic_ostream<char>::operator<< (_1, endl);
+                                                  }
+                                                finally
+                                                  {
+                                                    std::tuple<int, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::tuple<int, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, int, float>::~tuple (&D.58743);
+                                                  }
+                                              }
+                                            finally
+                                              {
+                                                D.58705 = {CLOBBER(eos)};
+                                              }
+                                          }
+                                        finally
+                                          {
+                                            std::__cxx11::basic_string<char>::~basic_string (&D.52134);
+                                          }
+                                      }
+                                    finally
+                                      {
+                                        std::allocator<char>::~allocator (&D.52133);
+                                      }
+                                  }
+                                finally
+                                  {
+                                    D.52133 = {CLOBBER(eos)};
+                                  }
+                              }
+                            finally
+                              {
+                                D.52134 = {CLOBBER(eos)};
+                              }
+                          }
+                        finally
+                          {
+                            std::tuple<int, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >::~tuple (&D.54912);
+                          }
+                      }
+                    finally
+                      {
+                        D.54885 = {CLOBBER(eos)};
+                      }
+                  }
+                finally
+                  {
+                    D.54912 = {CLOBBER(eos)};
+                  }
+              }
+            finally
+              {
+                D.58706 = {CLOBBER(eos)};
+              }
+          }
+        finally
+          {
+            D.58707 = {CLOBBER(eos)};
+          }
+      }
+    finally
+      {
+        D.58743 = {CLOBBER(eos)};
+      }
+    D.63812 = 0;
+    return D.63812;
+  }
+  D.63812 = 0;
+  return D.63812;
+}
+
+
+ std::tuple<int, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >::tuple<int, const char (&)[6]> (struct tuple * const this, int & __a1, const char[6] & __a2)
+{
+  MEM[(struct __as_base  &)this] = {CLOBBER(bob)};
+  {
+    _1 = &this->D.54467;
+    _2 = std::forward<const char (&)[6]> (__a2);
+    _3 = std::forward<int> (__a1);
+    std::_Tuple_impl<0, int, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >::_Tuple_impl<int, const char (&)[6]> (_1, _3, _2);
+    try
+      {
+
+      }
+    catch
+      {
+        _4 = &this->D.54467;
+        std::_Tuple_impl<0, int, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >::~_Tuple_impl (_4);
+      }
+  }
+}
+
+
+__attribute__((nodiscard))
+const char[6] & std::forward<const char (&)[6]> (const char[6] & __t)
+{
+  const char[6] & D.63828;
+
+  try
+    {
+      D.63828 = __t;
+      return D.63828;
+    }
+  catch
+    {
+      <<<eh_must_not_throw (__cxa_call_terminate)>>>
+    }
+  __builtin_unreachable trap ();
+}
+
+
+__attribute__((nodiscard))
+int & std::forward<int> (type & __t)
+{
+  int & D.63830;
+
+  try
+    {
+      D.63830 = __t;
+      return D.63830;
+    }
+  catch
+    {
+      <<<eh_must_not_throw (__cxa_call_terminate)>>>
+    }
+  __builtin_unreachable trap ();
+}
+
+
+ std::_Tuple_impl<0, int, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >::_Tuple_impl<int, const char (&)[6]> (struct _Tuple_impl * const this, int & __head, const char[6] & __tail#0)
+{
+  MEM[(struct __as_base  &)this] = {CLOBBER(bob)};
+  {
+    _1 = &this->D.53275;
+    _2 = std::forward<const char (&)[6]> (__tail#0);
+    std::_Tuple_impl<1, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >::_Tuple_impl<const char (&)[6]> (_1, _2);
+    try
+      {
+        _3 = &this->D.53276;
+        _4 = std::forward<int> (__head);
+        std::_Head_base<0, int, false>::_Head_base<int> (_3, _4);
+      }
+    catch
+      {
+        _5 = &this->D.53275;
+        std::_Tuple_impl<1, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >::~_Tuple_impl (_5);
+      }
+  }
+}
+
+
+ std::_Tuple_impl<1, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >::_Tuple_impl<const char (&)[6]> (struct _Tuple_impl * const this, const char[6] & __head)
+{
+  *this = {CLOBBER(bob)};
+  {
+    _1 = &this->D.52698;
+    _2 = std::forward<const char (&)[6]> (__head);
+    std::_Head_base<1, std::__cxx11::basic_string<char>, false>::_Head_base<const char (&)[6]> (_1, _2);
+    try
+      {
+
+      }
+    catch
+      {
+        _3 = &this->D.52698;
+        std::_Head_base<1, std::__cxx11::basic_string<char>, false>::~_Head_base (_3);
+      }
+  }
+}
+
+
+ std::_Head_base<1, std::__cxx11::basic_string<char>, false>::_Head_base<const char (&)[6]> (struct _Head_base * const this, const char[6] & __h)
+{
+  struct allocator D.63266;
+
+  *this = {CLOBBER(bob)};
+  {
+    _1 = &this->_M_head_impl;
+    try
+      {
+        std::allocator<char>::allocator (&D.63266);
+        try
+          {
+            _2 = std::forward<const char (&)[6]> (__h);
+            std::__cxx11::basic_string<char>::basic_string<> (_1, _2, &D.63266);
+          }
+        finally
+          {
+            std::allocator<char>::~allocator (&D.63266);
+          }
+      }
+    finally
+      {
+        D.63266 = {CLOBBER(eos)};
+      }
+    try
+      {
+
+      }
+    catch
+      {
+        _3 = &this->_M_head_impl;
+        std::__cxx11::basic_string<char>::~basic_string (_3);
+      }
+  }
+}
+
+
+ std::_Head_base<0, int, false>::_Head_base<int> (struct _Head_base * const this, int & __h)
+{
+  *this = {CLOBBER(bob)};
+  {
+    _1 = std::forward<int> (__h);
+    _2 = *_1;
+    this->_M_head_impl = _2;
+  }
+}
+
+
+__attribute__((always_inline))
+void std::allocator<char>::allocator (struct allocator * const this)
+{
+  try
+    {
+      {
+        std::__new_allocator<char>::__new_allocator (this);
+        try
+          {
+
+          }
+        catch
+          {
+            std::__new_allocator<char>::~__new_allocator (this);
+          }
+      }
+    }
+  catch
+    {
+      <<<eh_must_not_throw (__cxa_call_terminate)>>>
+    }
+}
+
+
+__attribute__((always_inline))
+void std::__new_allocator<char>::__new_allocator (struct __new_allocator * const this)
+{
+  try
+    {
+      {
+
+      }
+    }
+  catch
+    {
+      <<<eh_must_not_throw (__cxa_call_terminate)>>>
+    }
+}
+
+
+ std::__cxx11::basic_string<char>::basic_string<> (struct basic_string * const this, const char * __s, const struct allocator & __a)
+{
+  struct forward_iterator_tag D.63836;
+
+  *this = {CLOBBER(bob)};
+  {
+    _1 = &this->_M_dataplus;
+    _2 = std::__cxx11::basic_string<char>::_M_local_data (this);
+    std::__cxx11::basic_string<char>::_Alloc_hider::_Alloc_hider (_1, _2, __a);
+    try
+      {
+        {
+          const char * __end;
+
+          if (__s == 0B) goto <D.63834>; else goto <D.63835>;
+          <D.63834>:
+          std::__throw_logic_error ("basic_string: construction from null is not valid");
+          <D.63835>:
+          _3 = std::char_traits<char>::length (__s);
+          __end = __s + _3;
+          std::__cxx11::basic_string<char>::_M_construct<const char*> (this, __s, __end, D.63836);
+        }
+      }
+    catch
+      {
+        _4 = &this->_M_dataplus;
+        std::__cxx11::basic_string<char>::_Alloc_hider::~_Alloc_hider (_4);
+      }
+  }
+}
+
+
+ std::__cxx11::basic_string<char>::_Alloc_hider::_Alloc_hider (struct _Alloc_hider * const this, char * __dat, const struct allocator & __a)
+{
+  *this = {CLOBBER(bob)};
+  {
+    std::allocator<char>::allocator (this, __a);
+    try
+      {
+        this->_M_p = __dat;
+      }
+    catch
+      {
+        std::allocator<char>::~allocator (this);
+      }
+  }
+}
+
+
+__attribute__((always_inline))
+void std::allocator<char>::allocator (struct allocator * const this, const struct allocator & __a)
+{
+  try
+    {
+      {
+        std::__new_allocator<char>::__new_allocator (this, __a);
+        try
+          {
+
+          }
+        catch
+          {
+            std::__new_allocator<char>::~__new_allocator (this);
+          }
+      }
+    }
+  catch
+    {
+      <<<eh_must_not_throw (__cxa_call_terminate)>>>
+    }
+}
+
+
+__attribute__((always_inline))
+void std::__new_allocator<char>::__new_allocator (struct __new_allocator * const this, const struct __new_allocator & D.13977)
+{
+  try
+    {
+      {
+
+      }
+    }
+  catch
+    {
+      <<<eh_must_not_throw (__cxa_call_terminate)>>>
+    }
+}
+
+
+ std::char_traits<char>::length (const char_type * __s)
+{
+  bool retval.0;
+  size_t D.63842;
+
+  retval.0 = std::__is_constant_evaluated ();
+  if (retval.0 != 0) goto <D.63840>; else goto <D.63841>;
+  <D.63840>:
+  D.63842 = __gnu_cxx::char_traits<char>::length (__s);
+  return D.63842;
+  <D.63841>:
+  D.63842 = __builtin_strlen (__s);
+  return D.63842;
+}
+
+
+__attribute__((always_inline))
+bool std::__is_constant_evaluated ()
+{
+  bool D.63845;
+
+  try
+    {
+      D.63845 = 0;
+      return D.63845;
+    }
+  catch
+    {
+      <<<eh_must_not_throw (__cxa_call_terminate)>>>
+    }
+  __builtin_unreachable trap ();
+}
+
+
+ __gnu_cxx::char_traits<char>::length (const char_type * __p)
+{
+  bool retval.1;
+  const char_type D.58823;
+  size_t D.63848;
+  size_t __i;
+
+  __i = 0;
+  goto <D.58829>;
+  <D.58830>:
+  __i = __i + 1;
+  <D.58829>:
+  try
+    {
+      D.58823 = 0;
+      _1 = __p + __i;
+      _2 = __gnu_cxx::char_traits<char>::eq (_1, &D.58823);
+      retval.1 = ~_2;
+    }
+  finally
+    {
+      D.58823 = {CLOBBER(eos)};
+    }
+  if (retval.1 != 0) goto <D.58830>; else goto <D.58828>;
+  <D.58828>:
+  D.63848 = __i;
+  return D.63848;
+}
+
+
+ __gnu_cxx::char_traits<char>::eq (const char_type & __c1, const char_type & __c2)
+{
+  bool D.63850;
+
+  _1 = *__c1;
+  _2 = *__c2;
+  D.63850 = _1 == _2;
+  return D.63850;
+}
+
+
+ std::__cxx11::basic_string<char>::_M_construct<const char*> (struct basic_string * const this, const char * __beg, const char * __end, struct forward_iterator_tag D.61634)
+{
+  size_type __dnew;
+  typedef extern struct _Guard _Guard;
+  struct _Guard __guard;
+
+  try
+    {
+      _1 = std::distance<const char*> (__beg, __end);
+      _2 = (long long unsigned int) _1;
+      __dnew = _2;
+      __dnew.2_3 = __dnew;
+      if (__dnew.2_3 > 15) goto <D.63852>; else goto <D.63853>;
+      <D.63852>:
+      _4 = std::__cxx11::basic_string<char>::_M_create (this, &__dnew, 0);
+      std::__cxx11::basic_string<char>::_M_data (this, _4);
+      __dnew.3_5 = __dnew;
+      std::__cxx11::basic_string<char>::_M_capacity (this, __dnew.3_5);
+      goto <D.63854>;
+      <D.63853>:
+      std::__cxx11::basic_string<char>::_M_init_local_buf (this);
+      <D.63854>:
+      std::__cxx11::basic_string<char>::_M_construct<const char*>(const char*, const char*, std::forward_iterator_tag)::_Guard::_Guard (&__guard, this);
+      try
+        {
+          _6 = std::__cxx11::basic_string<char>::_M_data (this);
+          std::__cxx11::basic_string<char>::_S_copy_chars (_6, __beg, __end);
+          __guard._M_guarded = 0B;
+          __dnew.4_7 = __dnew;
+          std::__cxx11::basic_string<char>::_M_set_length (this, __dnew.4_7);
+        }
+      finally
+        {
+          std::__cxx11::basic_string<char>::_M_construct<const char*>(const char*, const char*, std::forward_iterator_tag)::_Guard::~_Guard (&__guard);
+        }
+    }
+  finally
+    {
+      __dnew = {CLOBBER(eos)};
+      __guard = {CLOBBER(eos)};
+    }
+}
+
+
+__attribute__((always_inline, nodiscard))
+difference_type std::distance<const char*> (const char * __first, const char * __last)
+{
+  difference_type D.63859;
+  struct random_access_iterator_tag D.63860;
+
+  std::__iterator_category<const char*> (&__first);
+  __first.5_1 = __first;
+  D.63859 = std::__distance<const char*> (__first.5_1, __last, D.63860);
+  return D.63859;
+}
+
+
+__attribute__((always_inline))
+struct iterator_category std::__iterator_category<const char*> (const char * const & D.61294)
+{
+  struct iterator_category D.63862;
+
+  return D.63862;
+}
+
+
+__attribute__((always_inline))
+difference_type std::__distance<const char*> (const char * __first, const char * __last, struct random_access_iterator_tag D.63060)
+{
+  difference_type D.63864;
+
+  D.63864 = __last - __first;
+  return D.63864;
+}
+
+
+__attribute__((always_inline))
+void std::__cxx11::basic_string<char>::_M_init_local_buf (struct basic_string * const this)
+{
+  try
+    {
+
+    }
+  catch
+    {
+      <<<eh_must_not_throw (__cxa_call_terminate)>>>
+    }
+}
+
+
+ std::__cxx11::basic_string<char>::_M_construct<const char*>(const char*, const char*, std::forward_iterator_tag)::_Guard::_Guard (struct _Guard * const this, struct basic_string * __s)
+{
+  *this = {CLOBBER(bob)};
+  {
+    this->_M_guarded = __s;
+  }
+}
+
+
+ std::__cxx11::basic_string<char>::_M_construct<const char*>(const char*, const char*, std::forward_iterator_tag)::_Guard::~_Guard (struct _Guard * const this)
+{
+  try
+    {
+      {
+        try
+          {
+            _1 = this->_M_guarded;
+            if (_1 != 0B) goto <D.63866>; else goto <D.63867>;
+            <D.63866>:
+            _2 = this->_M_guarded;
+            std::__cxx11::basic_string<char>::_M_dispose (_2);
+            goto <D.63868>;
+            <D.63867>:
+            <D.63868>:
+          }
+        finally
+          {
+            *this = {CLOBBER(eob)};
+          }
+      }
+    }
+  catch
+    {
+      <<<eh_must_not_throw (__cxa_call_terminate)>>>
+    }
+}
+
+
+ std::__cxx11::basic_string<char>::_Alloc_hider::~_Alloc_hider (struct _Alloc_hider * const this)
+{
+  try
+    {
+      try
+        {
+
+        }
+      finally
+        {
+          std::allocator<char>::~allocator (this);
+        }
+    }
+  finally
+    {
+      *this = {CLOBBER(eob)};
+    }
+}
+
+
+__attribute__((always_inline))
+void std::allocator<char>::~allocator (struct allocator * const this)
+{
+  try
+    {
+      {
+        try
+          {
+
+          }
+        finally
+          {
+            std::__new_allocator<char>::~__new_allocator (this);
+          }
+      }
+    }
+  catch
+    {
+      <<<eh_must_not_throw (__cxa_call_terminate)>>>
+    }
+}
+
+
+ std::__new_allocator<char>::~__new_allocator (struct __new_allocator * const this)
+{
+  try
+    {
+      {
+
+      }
+    }
+  catch
+    {
+      <<<eh_must_not_throw (__cxa_call_terminate)>>>
+    }
+}
+
+
+ std::tuple<int, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::tuple<int, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, int, float>::tuple<int, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::tuple<int, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, int, int> (struct tuple * const this, int & __elements#0, struct basic_string & __elements#1, struct tuple & __elements#2, int & __elements#3, int & __elements#4)
+{
+  try
+    {
+      MEM[(struct __as_base  &)this] = {CLOBBER(bob)};
+      {
+        _1 = &this->D.58348;
+        _2 = std::forward<int> (__elements#4);
+        _3 = std::forward<int> (__elements#3);
+        _4 = std::forward<std::tuple<int, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > > (__elements#2);
+        _5 = std::forward<std::__cxx11::basic_string<char> > (__elements#1);
+        _6 = std::forward<int> (__elements#0);
+        std::_Tuple_impl<0, int, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::tuple<int, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, int, float>::_Tuple_impl<int, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::tuple<int, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, int, int> (_1, _6, _5, _4, _3, _2);
+        try
+          {
+
+          }
+        catch
+          {
+            _7 = &this->D.58348;
+            std::_Tuple_impl<0, int, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::tuple<int, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, int, float>::~_Tuple_impl (_7);
+          }
+      }
+    }
+  catch
+    {
+      <<<eh_must_not_throw (__cxa_call_terminate)>>>
+    }
+}
+
+
+__attribute__((nodiscard))
+struct tuple & std::forward<std::tuple<int, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > > (struct type & __t)
+{
+  struct tuple & D.63869;
+
+  try
+    {
+      D.63869 = __t;
+      return D.63869;
+    }
+  catch
+    {
+      <<<eh_must_not_throw (__cxa_call_terminate)>>>
+    }
+  __builtin_unreachable trap ();
+}
+
+
+__attribute__((nodiscard))
+struct basic_string & std::forward<std::__cxx11::basic_string<char> > (struct type & __t)
+{
+  struct basic_string & D.63871;
+
+  try
+    {
+      D.63871 = __t;
+      return D.63871;
+    }
+  catch
+    {
+      <<<eh_must_not_throw (__cxa_call_terminate)>>>
+    }
+  __builtin_unreachable trap ();
+}
+
+
+ std::_Tuple_impl<0, int, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::tuple<int, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, int, float>::_Tuple_impl<int, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::tuple<int, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, int, int> (struct _Tuple_impl * const this, int & __head, struct basic_string & __tail#0, struct tuple & __tail#1, int & __tail#2, int & __tail#3)
+{
+  MEM[(struct __as_base  &)this] = {CLOBBER(bob)};
+  {
+    _1 = &this->D.57316;
+    _2 = std::forward<int> (__tail#3);
+    _3 = std::forward<int> (__tail#2);
+    _4 = std::forward<std::tuple<int, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > > (__tail#1);
+    _5 = std::forward<std::__cxx11::basic_string<char> > (__tail#0);
+    std::_Tuple_impl<1, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::tuple<int, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, int, float>::_Tuple_impl<std::__cxx11::basic_string<char>, std::tuple<int, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, int, int> (_1, _5, _4, _3, _2);
+    try
+      {
+        _6 = &this->D.57317;
+        _7 = std::forward<int> (__head);
+        std::_Head_base<0, int, false>::_Head_base<int> (_6, _7);
+      }
+    catch
+      {
+        _8 = &this->D.57316;
+        std::_Tuple_impl<1, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::tuple<int, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, int, float>::~_Tuple_impl (_8);
+      }
+  }
+}
+
+
+ std::_Tuple_impl<1, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::tuple<int, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, int, float>::_Tuple_impl<std::__cxx11::basic_string<char>, std::tuple<int, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, int, int> (struct _Tuple_impl * const this, struct basic_string & __head, struct tuple & __tail#0, int & __tail#1, int & __tail#2)
+{
+  *this = {CLOBBER(bob)};
+  {
+    _1 = &this->D.56944;
+    _2 = std::forward<int> (__tail#2);
+    _3 = std::forward<int> (__tail#1);
+    _4 = std::forward<std::tuple<int, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > > (__tail#0);
+    std::_Tuple_impl<2, std::tuple<int, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, int, float>::_Tuple_impl<std::tuple<int, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, int, int> (_1, _4, _3, _2);
+    try
+      {
+        _5 = &this->D.56945;
+        _6 = std::forward<std::__cxx11::basic_string<char> > (__head);
+        std::_Head_base<1, std::__cxx11::basic_string<char>, false>::_Head_base<std::__cxx11::basic_string<char> > (_5, _6);
+        try
+          {
+
+          }
+        catch
+          {
+            _7 = &this->D.56945;
+            std::_Head_base<1, std::__cxx11::basic_string<char>, false>::~_Head_base (_7);
+          }
+      }
+    catch
+      {
+        _8 = &this->D.56944;
+        std::_Tuple_impl<2, std::tuple<int, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, int, float>::~_Tuple_impl (_8);
+      }
+  }
+}
+
+
+ std::_Tuple_impl<2, std::tuple<int, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, int, float>::_Tuple_impl<std::tuple<int, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, int, int> (struct _Tuple_impl * const this, struct tuple & __head, int & __tail#0, int & __tail#1)
+{
+  *this = {CLOBBER(bob)};
+  {
+    _1 = &this->D.56577;
+    _2 = std::forward<int> (__tail#1);
+    _3 = std::forward<int> (__tail#0);
+    std::_Tuple_impl<3, int, float>::_Tuple_impl<int, int> (_1, _3, _2);
+    _4 = &this->D.56578;
+    _5 = std::forward<std::tuple<int, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > > (__head);
+    std::_Head_base<2, std::tuple<int, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, false>::_Head_base<std::tuple<int, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > > (_4, _5);
+    try
+      {
+
+      }
+    catch
+      {
+        _6 = &this->D.56578;
+        std::_Head_base<2, std::tuple<int, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, false>::~_Head_base (_6);
+      }
+  }
+}
+
+
+ std::_Tuple_impl<3, int, float>::_Tuple_impl<int, int> (struct _Tuple_impl * const this, int & __head, int & __tail#0)
+{
+  *this = {CLOBBER(bob)};
+  {
+    _1 = &this->D.56014;
+    _2 = std::forward<int> (__tail#0);
+    std::_Tuple_impl<4, float>::_Tuple_impl<int> (_1, _2);
+    _3 = &this->D.56015;
+    _4 = std::forward<int> (__head);
+    std::_Head_base<3, int, false>::_Head_base<int> (_3, _4);
+  }
+}
+
+
+ std::_Tuple_impl<4, float>::_Tuple_impl<int> (struct _Tuple_impl * const this, int & __head)
+{
+  *this = {CLOBBER(bob)};
+  {
+    _1 = &this->D.55467;
+    _2 = std::forward<int> (__head);
+    std::_Head_base<4, float, false>::_Head_base<int> (_1, _2);
+  }
+}
+
+
+ std::_Head_base<4, float, false>::_Head_base<int> (struct _Head_base * const this, int & __h)
+{
+  *this = {CLOBBER(bob)};
+  {
+    _1 = std::forward<int> (__h);
+    _2 = *_1;
+    _3 = (float) _2;
+    this->_M_head_impl = _3;
+  }
+}
+
+
+ std::_Head_base<3, int, false>::_Head_base<int> (struct _Head_base * const this, int & __h)
+{
+  *this = {CLOBBER(bob)};
+  {
+    _1 = std::forward<int> (__h);
+    _2 = *_1;
+    this->_M_head_impl = _2;
+  }
+}
+
+
+ std::_Head_base<2, std::tuple<int, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, false>::_Head_base<std::tuple<int, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > > (struct _Head_base * const this, struct tuple & __h)
+{
+  *this = {CLOBBER(bob)};
+  {
+    _1 = &this->_M_head_impl;
+    _2 = std::forward<std::tuple<int, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > > (__h);
+    std::tuple<int, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >::tuple (_1, _2);
+    try
+      {
+
+      }
+    catch
+      {
+        _3 = &this->_M_head_impl;
+        std::tuple<int, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >::~tuple (_3);
+      }
+  }
+}
+
+
+ std::tuple<int, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >::tuple (struct tuple * const this, struct tuple & D.54405)
+{
+  MEM[(struct __as_base  &)this] = {CLOBBER(bob)};
+  {
+    _1 = &this->D.54467;
+    _2 = &D.54405->D.54467;
+    std::_Tuple_impl<0, int, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >::_Tuple_impl (_1, _2);
+    try
+      {
+
+      }
+    catch
+      {
+        _3 = &this->D.54467;
+        std::_Tuple_impl<0, int, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >::~_Tuple_impl (_3);
+      }
+  }
+}
+
+
+ std::_Tuple_impl<0, int, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >::_Tuple_impl (struct _Tuple_impl * const this, struct _Tuple_impl & D.53246)
+{
+  MEM[(struct __as_base  &)this] = {CLOBBER(bob)};
+  {
+    _1 = &this->D.53275;
+    _2 = &D.53246->D.53275;
+    std::_Tuple_impl<1, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >::_Tuple_impl (_1, _2);
+    try
+      {
+        this->D.53276 = D.53246->D.53276;
+      }
+    catch
+      {
+        _3 = &this->D.53275;
+        std::_Tuple_impl<1, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >::~_Tuple_impl (_3);
+      }
+  }
+}
+
+
+ std::_Tuple_impl<1, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >::_Tuple_impl (struct _Tuple_impl * const this, struct _Tuple_impl & __in)
+{
+  try
+    {
+      *this = {CLOBBER(bob)};
+      {
+        _1 = &this->D.52698;
+        _2 = &__in->D.52698;
+        std::_Head_base<1, std::__cxx11::basic_string<char>, false>::_Head_base (_1, _2);
+        try
+          {
+
+          }
+        catch
+          {
+            _3 = &this->D.52698;
+            std::_Head_base<1, std::__cxx11::basic_string<char>, false>::~_Head_base (_3);
+          }
+      }
+    }
+  catch
+    {
+      <<<eh_must_not_throw (__cxa_call_terminate)>>>
+    }
+}
+
+
+ std::_Head_base<1, std::__cxx11::basic_string<char>, false>::_Head_base (struct _Head_base * const this, struct _Head_base & D.52346)
+{
+  *this = {CLOBBER(bob)};
+  {
+    _1 = &this->_M_head_impl;
+    _2 = &D.52346->_M_head_impl;
+    std::__cxx11::basic_string<char>::basic_string (_1, _2);
+    try
+      {
+
+      }
+    catch
+      {
+        _3 = &this->_M_head_impl;
+        std::__cxx11::basic_string<char>::~basic_string (_3);
+      }
+  }
+}
+
+
+ std::__cxx11::basic_string<char>::basic_string (struct basic_string * const this, struct basic_string & __str)
+{
+  bool retval.6;
+
+  try
+    {
+      *this = {CLOBBER(bob)};
+      {
+        _1 = &this->_M_dataplus;
+        _2 = std::__cxx11::basic_string<char>::_M_get_allocator (__str);
+        _3 = std::move<std::allocator<char>&> (_2);
+        _4 = std::__cxx11::basic_string<char>::_M_local_data (this);
+        std::__cxx11::basic_string<char>::_Alloc_hider::_Alloc_hider (_1, _4, _3);
+        try
+          {
+            retval.6 = std::__cxx11::basic_string<char>::_M_is_local (__str);
+            if (retval.6 != 0) goto <D.63874>; else goto <D.63875>;
+            <D.63874>:
+            std::__cxx11::basic_string<char>::_M_init_local_buf (this);
+            _5 = std::__cxx11::basic_string<char>::length (__str);
+            _6 = _5 + 1;
+            _7 = &__str->D.29705._M_local_buf;
+            _8 = &this->D.29705._M_local_buf;
+            std::char_traits<char>::copy (_8, _7, _6);
+            goto <D.63876>;
+            <D.63875>:
+            _9 = std::__cxx11::basic_string<char>::_M_data (__str);
+            std::__cxx11::basic_string<char>::_M_data (this, _9);
+            _10 = __str->D.29705._M_allocated_capacity;
+            std::__cxx11::basic_string<char>::_M_capacity (this, _10);
+            <D.63876>:
+            _11 = std::__cxx11::basic_string<char>::length (__str);
+            std::__cxx11::basic_string<char>::_M_length (this, _11);
+            _12 = std::__cxx11::basic_string<char>::_M_use_local_data (__str);
+            std::__cxx11::basic_string<char>::_M_data (__str, _12);
+            std::__cxx11::basic_string<char>::_M_set_length (__str, 0);
+          }
+        catch
+          {
+            _13 = &this->_M_dataplus;
+            std::__cxx11::basic_string<char>::_Alloc_hider::~_Alloc_hider (_13);
+          }
+      }
+    }
+  catch
+    {
+      <<<eh_must_not_throw (__cxa_call_terminate)>>>
+    }
+}
+
+
+__attribute__((nodiscard))
+struct type & std::move<std::allocator<char>&> (struct allocator & __t)
+{
+  struct type & D.63878;
+
+  try
+    {
+      D.63878 = __t;
+      return D.63878;
+    }
+  catch
+    {
+      <<<eh_must_not_throw (__cxa_call_terminate)>>>
+    }
+  __builtin_unreachable trap ();
+}
+
+
+ std::__cxx11::basic_string<char>::_Alloc_hider::_Alloc_hider (struct _Alloc_hider * const this, char * __dat, struct allocator & __a)
+{
+  *this = {CLOBBER(bob)};
+  {
+    _1 = std::move<std::allocator<char>&> (__a);
+    std::allocator<char>::allocator (this, _1);
+    try
+      {
+        this->_M_p = __dat;
+      }
+    catch
+      {
+        std::allocator<char>::~allocator (this);
+      }
+  }
+}
+
+
+ std::char_traits<char>::copy (char_type * __s1, const char_type * __s2, size_t __n)
+{
+  char_type * D.63882;
+
+  if (__n == 0) goto <D.63880>; else goto <D.63881>;
+  <D.63880>:
+  D.63882 = __s1;
+  // predicted unlikely by early return (on trees) predictor.
+  return D.63882;
+  <D.63881>:
+  D.63882 = __builtin_memcpy (__s1, __s2, __n);
+  return D.63882;
+}
+
+
+__attribute__((always_inline))
+char * std::__cxx11::basic_string<char>::_M_use_local_data (struct basic_string * const this)
+{
+  char * D.63884;
+
+  try
+    {
+      D.63884 = std::__cxx11::basic_string<char>::_M_local_data (this);
+      return D.63884;
+    }
+  catch
+    {
+      <<<eh_must_not_throw (__cxa_call_terminate)>>>
+    }
+  __builtin_unreachable trap ();
+}
+
+
+ std::_Head_base<1, std::__cxx11::basic_string<char>, false>::_Head_base<std::__cxx11::basic_string<char> > (struct _Head_base * const this, struct basic_string & __h)
+{
+  *this = {CLOBBER(bob)};
+  {
+    _1 = &this->_M_head_impl;
+    _2 = std::forward<std::__cxx11::basic_string<char> > (__h);
+    std::__cxx11::basic_string<char>::basic_string (_1, _2);
+    try
+      {
+
+      }
+    catch
+      {
+        _3 = &this->_M_head_impl;
+        std::__cxx11::basic_string<char>::~basic_string (_3);
+      }
+  }
+}
+
+
+ operator<< <char, std::char_traits<char>, int, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::tuple<int, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, int, float> (struct basic_ostream & os, const struct tuple & t)
+{
+  struct integral_constant D.63886;
+  struct basic_ostream & D.63887;
+
+  std::operator<< <std::char_traits<char> > (os, "<");
+  PrintTuple<char, std::char_traits<char>, int, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::tuple<int, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, int, float, 4> (os, t, D.63886);
+  std::operator<< <std::char_traits<char> > (os, ">");
+  D.63887 = os;
+  return D.63887;
+}
+
+
+ PrintTuple<char, std::char_traits<char>, int, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::tuple<int, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, int, float, 4> (struct basic_ostream & os, const struct tuple & t, struct integral_constant D.62516)
+{
+  struct integral_constant D.63889;
+
+  _1 = std::get<0, int, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::tuple<int, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, int, float> (t);
+  _2 = *_1;
+  _3 = std::basic_ostream<char>::operator<< (os, _2);
+  std::operator<< <std::char_traits<char> > (_3, ", ");
+  PrintTuple<char, std::char_traits<char>, int, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::tuple<int, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, int, float, 3> (os, t, D.63889);
+}
+
+
+ std::get<0, int, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::tuple<int, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, int, float> (const struct tuple & __t)
+{
+  const __tuple_element_t & D.63891;
+
+  try
+    {
+      _1 = &__t->D.58348;
+      D.63891 = std::__get_helper<0, int, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::tuple<int, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, int, float> (_1);
+      return D.63891;
+    }
+  catch
+    {
+      <<<eh_must_not_throw (__cxa_call_terminate)>>>
+    }
+  __builtin_unreachable trap ();
+}
+
+
+ std::__get_helper<0, int, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::tuple<int, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, int, float> (const struct _Tuple_impl & __t)
+{
+  const int & D.63893;
+
+  try
+    {
+      D.63893 = std::_Tuple_impl<0, int, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::tuple<int, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, int, float>::_M_head (__t);
+      return D.63893;
+    }
+  catch
+    {
+      <<<eh_must_not_throw (__cxa_call_terminate)>>>
+    }
+  __builtin_unreachable trap ();
+}
+
+
+ std::_Tuple_impl<0, int, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::tuple<int, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, int, float>::_M_head (const struct _Tuple_impl & __t)
+{
+  const int & D.63895;
+
+  try
+    {
+      _1 = &__t->D.57317;
+      D.63895 = std::_Head_base<0, int, false>::_M_head (_1);
+      return D.63895;
+    }
+  catch
+    {
+      <<<eh_must_not_throw (__cxa_call_terminate)>>>
+    }
+  __builtin_unreachable trap ();
+}
+
+
+ std::_Head_base<0, int, false>::_M_head (const struct _Head_base & __b)
+{
+  const int & D.63897;
+
+  try
+    {
+      D.63897 = &__b->_M_head_impl;
+      return D.63897;
+    }
+  catch
+    {
+      <<<eh_must_not_throw (__cxa_call_terminate)>>>
+    }
+  __builtin_unreachable trap ();
+}
+
+
+ PrintTuple<char, std::char_traits<char>, int, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::tuple<int, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, int, float, 3> (struct basic_ostream & os, const struct tuple & t, struct integral_constant D.62965)
+{
+  struct integral_constant D.63899;
+
+  _1 = std::get<1, int, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::tuple<int, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, int, float> (t);
+  _2 = std::operator<< <char, std::char_traits<char>, std::allocator<char> > (os, _1);
+  std::operator<< <std::char_traits<char> > (_2, ", ");
+  PrintTuple<char, std::char_traits<char>, int, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::tuple<int, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, int, float, 2> (os, t, D.63899);
+}
+
+
+ std::get<1, int, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::tuple<int, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, int, float> (const struct tuple & __t)
+{
+  const struct __tuple_element_t & D.63901;
+
+  try
+    {
+      _1 = &__t->D.58348.D.57316;
+      D.63901 = std::__get_helper<1, std::__cxx11::basic_string<char>, std::tuple<int, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, int, float> (_1);
+      return D.63901;
+    }
+  catch
+    {
+      <<<eh_must_not_throw (__cxa_call_terminate)>>>
+    }
+  __builtin_unreachable trap ();
+}
+
+
+ std::__get_helper<1, std::__cxx11::basic_string<char>, std::tuple<int, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, int, float> (const struct _Tuple_impl & __t)
+{
+  const struct basic_string & D.63903;
+
+  try
+    {
+      D.63903 = std::_Tuple_impl<1, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::tuple<int, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, int, float>::_M_head (__t);
+      return D.63903;
+    }
+  catch
+    {
+      <<<eh_must_not_throw (__cxa_call_terminate)>>>
+    }
+  __builtin_unreachable trap ();
+}
+
+
+ std::_Tuple_impl<1, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::tuple<int, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, int, float>::_M_head (const struct _Tuple_impl & __t)
+{
+  const struct basic_string & D.63905;
+
+  try
+    {
+      _1 = &__t->D.56945;
+      D.63905 = std::_Head_base<1, std::__cxx11::basic_string<char>, false>::_M_head (_1);
+      return D.63905;
+    }
+  catch
+    {
+      <<<eh_must_not_throw (__cxa_call_terminate)>>>
+    }
+  __builtin_unreachable trap ();
+}
+
+
+ std::_Head_base<1, std::__cxx11::basic_string<char>, false>::_M_head (const struct _Head_base & __b)
+{
+  const struct basic_string & D.63907;
+
+  try
+    {
+      D.63907 = &__b->_M_head_impl;
+      return D.63907;
+    }
+  catch
+    {
+      <<<eh_must_not_throw (__cxa_call_terminate)>>>
+    }
+  __builtin_unreachable trap ();
+}
+
+
+ PrintTuple<char, std::char_traits<char>, int, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::tuple<int, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, int, float, 2> (struct basic_ostream & os, const struct tuple & t, struct integral_constant D.63323)
+{
+  struct integral_constant D.63909;
+
+  _1 = std::get<2, int, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::tuple<int, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, int, float> (t);
+  _2 = operator<< <char, std::char_traits<char>, int, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > (os, _1);
+  std::operator<< <std::char_traits<char> > (_2, ", ");
+  PrintTuple<char, std::char_traits<char>, int, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::tuple<int, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, int, float, 1> (os, t, D.63909);
+}
+
+
+ std::get<2, int, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::tuple<int, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, int, float> (const struct tuple & __t)
+{
+  const struct __tuple_element_t & D.63911;
+
+  try
+    {
+      _1 = &__t->D.58348.D.57316.D.56944;
+      D.63911 = std::__get_helper<2, std::tuple<int, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, int, float> (_1);
+      return D.63911;
+    }
+  catch
+    {
+      <<<eh_must_not_throw (__cxa_call_terminate)>>>
+    }
+  __builtin_unreachable trap ();
+}
+
+
+ std::__get_helper<2, std::tuple<int, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, int, float> (const struct _Tuple_impl & __t)
+{
+  const struct tuple & D.63913;
+
+  try
+    {
+      D.63913 = std::_Tuple_impl<2, std::tuple<int, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, int, float>::_M_head (__t);
+      return D.63913;
+    }
+  catch
+    {
+      <<<eh_must_not_throw (__cxa_call_terminate)>>>
+    }
+  __builtin_unreachable trap ();
+}
+
+
+ std::_Tuple_impl<2, std::tuple<int, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, int, float>::_M_head (const struct _Tuple_impl & __t)
+{
+  const struct tuple & D.63915;
+
+  try
+    {
+      _1 = &__t->D.56578;
+      D.63915 = std::_Head_base<2, std::tuple<int, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, false>::_M_head (_1);
+      return D.63915;
+    }
+  catch
+    {
+      <<<eh_must_not_throw (__cxa_call_terminate)>>>
+    }
+  __builtin_unreachable trap ();
+}
+
+
+ std::_Head_base<2, std::tuple<int, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, false>::_M_head (const struct _Head_base & __b)
+{
+  const struct tuple & D.63917;
+
+  try
+    {
+      D.63917 = &__b->_M_head_impl;
+      return D.63917;
+    }
+  catch
+    {
+      <<<eh_must_not_throw (__cxa_call_terminate)>>>
+    }
+  __builtin_unreachable trap ();
+}
+
+
+ operator<< <char, std::char_traits<char>, int, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > (struct basic_ostream & os, const struct tuple & t)
+{
+  struct integral_constant D.63919;
+  struct basic_ostream & D.63920;
+
+  std::operator<< <std::char_traits<char> > (os, "<");
+  PrintTuple<char, std::char_traits<char>, int, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, 1> (os, t, D.63919);
+  std::operator<< <std::char_traits<char> > (os, ">");
+  D.63920 = os;
+  return D.63920;
+}
+
+
+ PrintTuple<char, std::char_traits<char>, int, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, 1> (struct basic_ostream & os, const struct tuple & t, struct integral_constant D.63641)
+{
+  struct integral_constant D.63922;
+
+  _1 = std::get<0, int, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > (t);
+  _2 = *_1;
+  _3 = std::basic_ostream<char>::operator<< (os, _2);
+  std::operator<< <std::char_traits<char> > (_3, ", ");
+  PrintTuple<char, std::char_traits<char>, int, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, 0> (os, t, D.63922);
+}
+
+
+ std::get<0, int, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > (const struct tuple & __t)
+{
+  const __tuple_element_t & D.63924;
+
+  try
+    {
+      _1 = &__t->D.54467;
+      D.63924 = std::__get_helper<0, int, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > (_1);
+      return D.63924;
+    }
+  catch
+    {
+      <<<eh_must_not_throw (__cxa_call_terminate)>>>
+    }
+  __builtin_unreachable trap ();
+}
+
+
+ std::__get_helper<0, int, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > (const struct _Tuple_impl & __t)
+{
+  const int & D.63926;
+
+  try
+    {
+      D.63926 = std::_Tuple_impl<0, int, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >::_M_head (__t);
+      return D.63926;
+    }
+  catch
+    {
+      <<<eh_must_not_throw (__cxa_call_terminate)>>>
+    }
+  __builtin_unreachable trap ();
+}
+
+
+ std::_Tuple_impl<0, int, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >::_M_head (const struct _Tuple_impl & __t)
+{
+  const int & D.63928;
+
+  try
+    {
+      _1 = &__t->D.53276;
+      D.63928 = std::_Head_base<0, int, false>::_M_head (_1);
+      return D.63928;
+    }
+  catch
+    {
+      <<<eh_must_not_throw (__cxa_call_terminate)>>>
+    }
+  __builtin_unreachable trap ();
+}
+
+
+ PrintTuple<char, std::char_traits<char>, int, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, 0> (struct basic_ostream & os, const struct tuple & t, struct integral_constant D.63736)
+{
+  _1 = std::get<1, int, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > (t);
+  std::operator<< <char, std::char_traits<char>, std::allocator<char> > (os, _1);
+}
+
+
+ std::get<1, int, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > (const struct tuple & __t)
+{
+  const struct __tuple_element_t & D.63930;
+
+  try
+    {
+      _1 = &__t->D.54467.D.53275;
+      D.63930 = std::__get_helper<1, std::__cxx11::basic_string<char> > (_1);
+      return D.63930;
+    }
+  catch
+    {
+      <<<eh_must_not_throw (__cxa_call_terminate)>>>
+    }
+  __builtin_unreachable trap ();
+}
+
+
+ std::__get_helper<1, std::__cxx11::basic_string<char> > (const struct _Tuple_impl & __t)
+{
+  const struct basic_string & D.63932;
+
+  try
+    {
+      D.63932 = std::_Tuple_impl<1, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >::_M_head (__t);
+      return D.63932;
+    }
+  catch
+    {
+      <<<eh_must_not_throw (__cxa_call_terminate)>>>
+    }
+  __builtin_unreachable trap ();
+}
+
+
+ std::_Tuple_impl<1, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >::_M_head (const struct _Tuple_impl & __t)
+{
+  const struct basic_string & D.63934;
+
+  try
+    {
+      _1 = &__t->D.52698;
+      D.63934 = std::_Head_base<1, std::__cxx11::basic_string<char>, false>::_M_head (_1);
+      return D.63934;
+    }
+  catch
+    {
+      <<<eh_must_not_throw (__cxa_call_terminate)>>>
+    }
+  __builtin_unreachable trap ();
+}
+
+
+ PrintTuple<char, std::char_traits<char>, int, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::tuple<int, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, int, float, 1> (struct basic_ostream & os, const struct tuple & t, struct integral_constant D.63527)
+{
+  struct integral_constant D.63936;
+
+  _1 = std::get<3, int, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::tuple<int, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, int, float> (t);
+  _2 = *_1;
+  _3 = std::basic_ostream<char>::operator<< (os, _2);
+  std::operator<< <std::char_traits<char> > (_3, ", ");
+  PrintTuple<char, std::char_traits<char>, int, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::tuple<int, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, int, float, 0> (os, t, D.63936);
+}
+
+
+ std::get<3, int, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::tuple<int, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, int, float> (const struct tuple & __t)
+{
+  const __tuple_element_t & D.63938;
+
+  try
+    {
+      _1 = &__t->D.58348.D.57316.D.56944.D.56577;
+      D.63938 = std::__get_helper<3, int, float> (_1);
+      return D.63938;
+    }
+  catch
+    {
+      <<<eh_must_not_throw (__cxa_call_terminate)>>>
+    }
+  __builtin_unreachable trap ();
+}
+
+
+ std::__get_helper<3, int, float> (const struct _Tuple_impl & __t)
+{
+  const int & D.63940;
+
+  try
+    {
+      D.63940 = std::_Tuple_impl<3, int, float>::_M_head (__t);
+      return D.63940;
+    }
+  catch
+    {
+      <<<eh_must_not_throw (__cxa_call_terminate)>>>
+    }
+  __builtin_unreachable trap ();
+}
+
+
+ std::_Tuple_impl<3, int, float>::_M_head (const struct _Tuple_impl & __t)
+{
+  const int & D.63942;
+
+  try
+    {
+      _1 = &__t->D.56015;
+      D.63942 = std::_Head_base<3, int, false>::_M_head (_1);
+      return D.63942;
+    }
+  catch
+    {
+      <<<eh_must_not_throw (__cxa_call_terminate)>>>
+    }
+  __builtin_unreachable trap ();
+}
+
+
+ std::_Head_base<3, int, false>::_M_head (const struct _Head_base & __b)
+{
+  const int & D.63944;
+
+  try
+    {
+      D.63944 = &__b->_M_head_impl;
+      return D.63944;
+    }
+  catch
+    {
+      <<<eh_must_not_throw (__cxa_call_terminate)>>>
+    }
+  __builtin_unreachable trap ();
+}
+
+
+ PrintTuple<char, std::char_traits<char>, int, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::tuple<int, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, int, float, 0> (struct basic_ostream & os, const struct tuple & t, struct integral_constant D.63671)
+{
+  _1 = std::get<4, int, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::tuple<int, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, int, float> (t);
+  _2 = *_1;
+  std::basic_ostream<char>::operator<< (os, _2);
+}
+
+
+ std::get<4, int, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::tuple<int, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, int, float> (const struct tuple & __t)
+{
+  const __tuple_element_t & D.63946;
+
+  try
+    {
+      _1 = &__t->D.58348.D.57316.D.56944.D.56577.D.56014;
+      D.63946 = std::__get_helper<4, float> (_1);
+      return D.63946;
+    }
+  catch
+    {
+      <<<eh_must_not_throw (__cxa_call_terminate)>>>
+    }
+  __builtin_unreachable trap ();
+}
+
+
+ std::__get_helper<4, float> (const struct _Tuple_impl & __t)
+{
+  const float & D.63948;
+
+  try
+    {
+      D.63948 = std::_Tuple_impl<4, float>::_M_head (__t);
+      return D.63948;
+    }
+  catch
+    {
+      <<<eh_must_not_throw (__cxa_call_terminate)>>>
+    }
+  __builtin_unreachable trap ();
+}
+
+
+ std::_Tuple_impl<4, float>::_M_head (const struct _Tuple_impl & __t)
+{
+  const float & D.63950;
+
+  try
+    {
+      _1 = &__t->D.55467;
+      D.63950 = std::_Head_base<4, float, false>::_M_head (_1);
+      return D.63950;
+    }
+  catch
+    {
+      <<<eh_must_not_throw (__cxa_call_terminate)>>>
+    }
+  __builtin_unreachable trap ();
+}
+
+
+ std::_Head_base<4, float, false>::_M_head (const struct _Head_base & __b)
+{
+  const float & D.63952;
+
+  try
+    {
+      D.63952 = &__b->_M_head_impl;
+      return D.63952;
+    }
+  catch
+    {
+      <<<eh_must_not_throw (__cxa_call_terminate)>>>
+    }
+  __builtin_unreachable trap ();
+}
+
+
+ std::tuple<int, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::tuple<int, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, int, float>::~tuple (struct tuple * const this)
+{
+  try
+    {
+      try
+        {
+
+        }
+      finally
+        {
+          _1 = &this->D.58348;
+          std::_Tuple_impl<0, int, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::tuple<int, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, int, float>::~_Tuple_impl (_1);
+        }
+    }
+  finally
+    {
+      MEM[(struct __as_base  &)this] = {CLOBBER(eob)};
+    }
+}
+
+
+ std::_Tuple_impl<0, int, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::tuple<int, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, int, float>::~_Tuple_impl (struct _Tuple_impl * const this)
+{
+  try
+    {
+      try
+        {
+
+        }
+      finally
+        {
+          _1 = &this->D.57316;
+          std::_Tuple_impl<1, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::tuple<int, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, int, float>::~_Tuple_impl (_1);
+        }
+    }
+  finally
+    {
+      MEM[(struct __as_base  &)this] = {CLOBBER(eob)};
+    }
+}
+
+
+ std::_Tuple_impl<1, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::tuple<int, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, int, float>::~_Tuple_impl (struct _Tuple_impl * const this)
+{
+  try
+    {
+      try
+        {
+          try
+            {
+
+            }
+          finally
+            {
+              _1 = &this->D.56945;
+              std::_Head_base<1, std::__cxx11::basic_string<char>, false>::~_Head_base (_1);
+            }
+        }
+      finally
+        {
+          _2 = &this->D.56944;
+          std::_Tuple_impl<2, std::tuple<int, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, int, float>::~_Tuple_impl (_2);
+        }
+    }
+  finally
+    {
+      *this = {CLOBBER(eob)};
+    }
+}
+
+
+ std::_Head_base<1, std::__cxx11::basic_string<char>, false>::~_Head_base (struct _Head_base * const this)
+{
+  try
+    {
+      try
+        {
+
+        }
+      finally
+        {
+          _1 = &this->_M_head_impl;
+          std::__cxx11::basic_string<char>::~basic_string (_1);
+        }
+    }
+  finally
+    {
+      *this = {CLOBBER(eob)};
+    }
+}
+
+
+ std::_Tuple_impl<2, std::tuple<int, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, int, float>::~_Tuple_impl (struct _Tuple_impl * const this)
+{
+  try
+    {
+      try
+        {
+
+        }
+      finally
+        {
+          _1 = &this->D.56578;
+          std::_Head_base<2, std::tuple<int, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, false>::~_Head_base (_1);
+        }
+    }
+  finally
+    {
+      *this = {CLOBBER(eob)};
+    }
+}
+
+
+ std::_Head_base<2, std::tuple<int, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, false>::~_Head_base (struct _Head_base * const this)
+{
+  try
+    {
+      try
+        {
+
+        }
+      finally
+        {
+          _1 = &this->_M_head_impl;
+          std::tuple<int, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >::~tuple (_1);
+        }
+    }
+  finally
+    {
+      *this = {CLOBBER(eob)};
+    }
+}
+
+
+ std::__cxx11::basic_string<char>::~basic_string (struct basic_string * const this)
+{
+  try
+    {
+      {
+        try
+          {
+            try
+              {
+                std::__cxx11::basic_string<char>::_M_dispose (this);
+              }
+            finally
+              {
+                _1 = &this->_M_dataplus;
+                std::__cxx11::basic_string<char>::_Alloc_hider::~_Alloc_hider (_1);
+              }
+          }
+        finally
+          {
+            *this = {CLOBBER(eob)};
+          }
+      }
+    }
+  catch
+    {
+      <<<eh_must_not_throw (__cxa_call_terminate)>>>
+    }
+}
+
+
+ std::tuple<int, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >::~tuple (struct tuple * const this)
+{
+  try
+    {
+      try
+        {
+
+        }
+      finally
+        {
+          _1 = &this->D.54467;
+          std::_Tuple_impl<0, int, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >::~_Tuple_impl (_1);
+        }
+    }
+  finally
+    {
+      MEM[(struct __as_base  &)this] = {CLOBBER(eob)};
+    }
+}
+
+
+ std::_Tuple_impl<0, int, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >::~_Tuple_impl (struct _Tuple_impl * const this)
+{
+  try
+    {
+      try
+        {
+
+        }
+      finally
+        {
+          _1 = &this->D.53275;
+          std::_Tuple_impl<1, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >::~_Tuple_impl (_1);
+        }
+    }
+  finally
+    {
+      MEM[(struct __as_base  &)this] = {CLOBBER(eob)};
+    }
+}
+
+
+ std::_Tuple_impl<1, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >::~_Tuple_impl (struct _Tuple_impl * const this)
+{
+  try
+    {
+      try
+        {
+
+        }
+      finally
+        {
+          _1 = &this->D.52698;
+          std::_Head_base<1, std::__cxx11::basic_string<char>, false>::~_Head_base (_1);
+        }
+    }
+  finally
+    {
+      *this = {CLOBBER(eob)};
+    }
+}
+
+

@@ -20,6 +20,7 @@ project(${PROJ_NAME} VERSION 1.0.0 LANGUAGES CXX)
 
 add_subdirectory(src/StLogger)
 add_subdirectory(src/PrisonGame)
+add_subdirectory(src/PrisonGameTests)
 #add_subdirectory(src/simple-neural-network)
 
 target_link_libraries(${PROJ_NAME} PRIVATE StLogger)

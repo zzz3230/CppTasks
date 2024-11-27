@@ -22,18 +22,38 @@ namespace PrisonGame
         }
 
         Game game;
-        if(_config.GetGameMode() == GameMode::Fast){
-
-        }
-
+        
         game.SetStrategies(strategyCreators);
         game.SetPayoffMatrix(_config.GetPayoffMatrix());
-        game.SetIterationsCount(_config.GetSteps());
 
-        while (game.HasNextIteration())
-        {
-            game.ProccessNextIteration();
+        if(_config.GetGameMode() == GameMode::Fast){
+            
+            game.SetIterationsCount(_config.GetSteps());
+
+            while (game.HasNextIteration())
+            {
+                game.ProccessNextIteration();
+            }
+            game.PrintFinalScore();
         }
-        game.PrintFinalScore();
+
+        else if(_config.GetGameMode() == GameMode::Detailed){
+
+            game.SetIterationsCount(INT32_MAX);
+            
+            while (true)
+            {
+                game.ProccessNextIteration();
+                game.PrintFinalScore();
+
+                std::string resp;
+                std::getline(std::cin, resp);
+
+                if(resp == "stop" || resp == "exit"){
+                    break;
+                }
+            }
+            
+        }
     }    
 } // namespace PrisonGame
